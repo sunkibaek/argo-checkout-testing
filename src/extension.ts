@@ -6,6 +6,4 @@ export const handleShouldRenderExtension = ({ storage }: any) => {
   return { render: true };
 };
 
-// console.log("extend", Object.keys(self.shopify));
-
 extend("Checkout::PostPurchase::ShouldRender", handleShouldRenderExtension);
